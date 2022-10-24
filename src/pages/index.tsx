@@ -30,16 +30,16 @@ const Home: NextPage = () => {
   };
 
   return (
-    <div className="min-h-screen grid place-items-center max-h-screen">
+    <div className="grid max-h-screen min-h-screen place-items-center">
       <Toaster />
-      <div className="h-min grid gap-12">
-        <div className="grid justify-items-center gap-2">
-          <h1 className="text-2xl font-bold">Add new URL</h1>
+      <div className="grid gap-12 h-min">
+        <div className="grid gap-2 justify-items-center">
+          <h1 className="text-2xl font-bold">Add new URL!</h1>
           <form className="grid gap-2" onSubmit={(e) => createShortUrl(e)}>
-            <div className="grid gap-2 grid-flow-row">
+            <div className="grid grid-flow-row gap-2">
               <label htmlFor="url">URL</label>
               <input
-                className="rounded p-1"
+                className="p-1 rounded"
                 type="text"
                 id="url"
                 name="url"
@@ -47,10 +47,10 @@ const Home: NextPage = () => {
                 onChange={(ev) => setUrl(ev.target.value)}
               />
             </div>
-            <div className="grid gap-2 grid-flow-row">
+            <div className="grid grid-flow-row gap-2">
               <label htmlFor="slug">Slug</label>
               <input
-                className="rounded p-1"
+                className="p-1 rounded"
                 type="text"
                 id="slug"
                 name="slug"
